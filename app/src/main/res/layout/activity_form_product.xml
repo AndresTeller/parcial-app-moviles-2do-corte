@@ -97,7 +97,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_background"
-            android:inputType="text"
+            android:inputType="number"
             android:padding="10dp" />
 
     </LinearLayout>
@@ -128,8 +128,9 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_background"
-            android:inputType="text"
-            android:padding="10dp" />
+            android:inputType="number"
+            android:padding="10dp"
+            />
 
     </LinearLayout>
 
@@ -140,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:background="@drawable/style_buttoms"
-        android:text="AGREGAR"
+        android:text="Add"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -156,7 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@drawable/style_buttoms"
-        android:text="LIMPIAR"
+        android:text="Clear"
         android:textColor="#ffffff"
         android:textSize="19sp"
         android:textStyle="bold"

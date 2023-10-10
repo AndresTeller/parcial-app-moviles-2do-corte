@@ -63,7 +63,7 @@ class FormProduct : AppCompatActivity() {
             etCode.text.clear()
             etProductName.text.clear()
             etPrice.text.clear()
-            etDiscount.setSelection(0)
+            etDiscount.text.clear()
         }
 
 

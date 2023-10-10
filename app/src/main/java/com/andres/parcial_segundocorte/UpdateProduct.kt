@@ -48,7 +48,7 @@ class UpdateProduct : AppCompatActivity() {
             etEditCode.text.clear()
             etEditProductName.text.clear()
             etEditPrice.text.clear()
-            etEditDiscount.setSelection(0)  // Establecer la selección del Spinner al primer elemento
+            etEditDiscount.text.clear()  // Establecer la selección del Spinner al primer elemento
         }
 
         //Editar los datos
