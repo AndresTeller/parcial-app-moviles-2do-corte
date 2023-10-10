@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormProduct">
+
+    <!-- CODE INPUT -->
+    <LinearLayout
+        android:id="@+id/llCode"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code: "
+            />
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <!-- MOVIE NAME INPUT -->
+    <LinearLayout
+        android:id="@+id/llProductName"
+        app:layout_constraintTop_toBottomOf="@+id/llCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product name: "
+            />
+        <EditText
+            android:id="@+id/etProductName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <!-- DIRECTOR INPUT -->
+    <LinearLayout
+        android:id="@+id/llPrice"
+        app:layout_constraintTop_toBottomOf="@+id/llProductName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: "
+            />
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <!-- GENRE MOVIE INPUT -->
+    <LinearLayout
+        android:id="@+id/llDiscount"
+        app:layout_constraintTop_toBottomOf="@+id/llPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount: "
+            />
+        <EditText
+            android:id="@+id/etDiscount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <!--  ADD AND DELETE BUTTONS -->
+    <LinearLayout
+        android:id="@+id/llActions"
+        app:layout_constraintTop_toBottomOf="@+id/llDiscount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            />
+        <Button
+            android:id="@+id/btnCancelProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
