@@ -28,10 +28,10 @@ class ShowProducts : AppCompatActivity() {
             val textViewGenre = productDetailsLayout.findViewById<TextView>(R.id.textViewDiscount)
 
             // Mostrar la información de la película
-            textViewCode.text = "disc: ${product.discount}"
-            textViewMovieName.text = "Movie name: ${product.productName}"
-            textViewDirector.text = "Director: ${product.price}"
-            textViewGenre.text = "Genre: ${product.discount}"
+            textViewGenre.text = "Code: ${product.discount}"
+            textViewMovieName.text = "Product name: ${product.productName}"
+            textViewDirector.text = "Price: ${product.price}"
+            textViewCode.text = "Disc: ${product.discount}"
 
             // Agregar el botón de eliminar con el listener
             val btnDelete = productDetailsLayout.findViewById<Button>(R.id.btnDelete)
